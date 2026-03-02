@@ -4,7 +4,6 @@ import sqlite3
 
 from pyrogram import Client, filters, errors
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from pyrogram.raw.functions.payments import GetStarsStatus
 from pyrogram.raw.types import InputPeerSelf
 
 # -------------------- CONFIGURATION --------------------
@@ -325,4 +324,5 @@ async def show_session_details(message: Message, s_id: str, u_id: int):
             pass
 
 if __name__ == "__main__":
+
     bot.run()
